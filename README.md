@@ -70,3 +70,9 @@ You can also include vue-select directly in the browser. Check out the
 ## License
 
 [MIT](https://github.com/sagalbot/vue-select/blob/master/LICENSE.md)
+
+I added the following for vue-select
+
+use `vue-serve` to serve the non built version of Vue-select
+use `rollup-build` to build the version of Vue-select
+use `vue-serve-prod` to serve the built version of Vue-select
