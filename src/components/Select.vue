@@ -1,7 +1,3 @@
-<style lang="scss">
-@import '../scss/vue-select.scss';
-</style>
-
 <template>
   <div :dir="dir" class="v-select" :class="stateClasses">
     <slot name="header" v-bind="scope.header" />
@@ -725,7 +721,7 @@ export default {
      * @returns {HTMLInputElement}
      */
     searchEl() {
-      return !!this.$scopedSlots['search']
+      return !!this.$slots['search']
         ? this.$refs.selectedOptions.querySelector(
             this.searchInputQuerySelector
           )
@@ -958,8 +954,6 @@ export default {
     if (typeof this.value !== 'undefined' && this.isTrackingValues) {
       this.setInternalValueFromOptions(this.value)
     }
-
-    this.$on('option:created', this.pushTag)
   },
 
   methods: {
@@ -989,6 +983,7 @@ export default {
       this.$emit('option:selecting', option)
       if (!this.isOptionSelected(option)) {
         if (this.taggable && !this.optionExists(option)) {
+          this.pushTag(option)
           this.$emit('option:created', option)
         }
         if (this.multiple) {
@@ -1341,3 +1336,7 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+@import '../scss/vue-select.scss';
+</style>
