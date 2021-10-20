@@ -83,7 +83,9 @@
     "rollup-plugin-vue": "^6.0.0-alpha.8",
     "semantic-release": "^17.0.4",
     "url-loader": "^1.1.2",
-    "vue": "^3.0.1"
+    "vue": "^3.0.1",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -136,9 +138,5 @@
         "maxSize": "6 KB"
       }
     ]
-  },
-  "dependencies": {
-    "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2"
   }
 }
