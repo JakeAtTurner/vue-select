@@ -23,7 +23,8 @@
     "eslint:fix": "npm run eslint -- --fix",
     "semantic-release": "semantic-release",
     "commit": "git-cz",
-    "vue-serve": "vue-cli-service serve dev/dev.js"
+    "vue-serve": "vue-cli-service serve dev/dev.js",
+    "vue-build": "vue-cli-service build src/index.js"
   },
   "repository": {
     "type": "git",
