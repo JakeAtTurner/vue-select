@@ -1,8 +1,6 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import Dev from './Dev.vue'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
 
-new Vue({
-  render: (h) => h(Dev),
-}).$mount('#app')
+createApp(Dev).mount('#app')

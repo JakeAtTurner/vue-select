@@ -28,3 +28,5 @@ package-lock.json
 dev/dist
 docs/.vuepress/dist
 .netlify
+.work
+

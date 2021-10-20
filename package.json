@@ -22,7 +22,8 @@
     "eslint": "eslint '{**/*,*}.{js,ts,jsx,tsx,vue}'",
     "eslint:fix": "npm run eslint -- --fix",
     "semantic-release": "semantic-release",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "vue-serve": "vue-cli-service serve dev/dev.js"
   },
   "repository": {
     "type": "git",
@@ -36,55 +37,44 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
-    "@babel/eslint-parser": "^7.14.7",
-    "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/runtime": "^7.4.2",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.0.4",
-    "@vue/test-utils": "^1.2.2",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/test-utils": "2.0.0-rc.16",
     "autoprefixer": "^9.4.7",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.5",
     "bundlewatch": "^0.2.5",
     "chokidar": "^2.1.5",
     "commitizen": "^4.0.3",
+    "core-js": "^3.6.5",
     "coveralls": "^3.0.2",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
     "cssnano": "^4.1.10",
     "cz-conventional-changelog": "3.1.0",
-    "eslint": "^6.8.0",
+    "eslint": "^6.0.2",
     "eslint-config-prettier": "^6.10.0",
-    "eslint-loader": "^3.0.3",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-vue": "^6.2.1",
+    "eslint-plugin-vue": "^7.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.1.0",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
-    "mini-css-extract-plugin": "^0.5.0",
-    "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "postcss-scss": "^2.0.0",
     "prettier": "2.2.1",
-    "sass-loader": "^7.1.0",
     "semantic-release": "^17.0.4",
-    "terser-webpack-plugin": "^1.2.3",
     "url-loader": "^1.1.2",
-    "vue": "^2.6.10",
-    "vue-html-loader": "^1.2.4",
-    "vue-jest": "^3.0.4",
-    "vue-loader": "^15.7.0",
-    "vue-server-renderer": "^2.6.10",
-    "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "^2.6.10",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1",
-    "webpack-merge": "^4.2.1"
+    "vue": "^3.0.1"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -137,5 +127,9 @@
         "maxSize": "6 KB"
       }
     ]
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
   }
 }
